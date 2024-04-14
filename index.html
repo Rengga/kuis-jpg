@@ -15,77 +15,15 @@
   </head>
   <body>
     <div class="sect w-full">
-      <div class="soal"></div>
+      <div id="soal"></div>
       <br />
       <div class="for-box flex w-full justify-center gap-4"></div>
     </div>
+
+    <button id="shuffleButton">Shuffle</button>
   </body>
 </html>
-<!-- <script>
-  var answers = [
-    {
-      romaji: "abc",
-      jpg: "cba",
-    },
-    {
-      romaji: "def",
-      jpg: "fed",
-    },
-    {
-      romaji: "ghi",
-      jpg: "ihg",
-    },
-    {
-      romaji: "jkl",
-      jpg: "ljk",
-    },
-    {
-      romaji: "mno",
-      jpg: "onm",
-    },
-  ];
 
-  var soal = soal(answers);
-
-  $(document).ready(function () {
-    answersnya();
-    $(".soal").text(soal);
-  });
-
-  function random(array) {
-    let indexSekarang = array.length,
-      randomIndex;
-    console.log(indexSekarang, "cek1");
-
-    if (indexSekarang !== 0) {
-      randomIndex = Math.floor(Math.random() * indexSekarang);
-      console.log(randomIndex, "cek2");
-
-      indexSekarang--;
-      console.log(indexSekarang, "cek3");
-      [array[indexSekarang], array[randomIndex]] = [array[randomIndex], array[indexSekarang]];
-    }
-    console.log(array, "cek4");
-    return array;
-  }
-
-  function answersnya() {
-    let randomAnswers = random(answers); // Mengacak array
-    console.log(randomAnswers, "cek5");
-
-    // Hanya mengambil 4 elemen pertama setelah diacak
-    let selectedAnswers = randomAnswers.slice(0, 4);
-
-    $.each(selectedAnswers, function (index, value) {
-      $(".for-box").append('<div class="box">' + value.romaji + "</div>");
-    });
-  }
-
-  function soal(answers) {
-    let randomSoal = Math.floor(Math.random() * answers.length);
-    return answers[randomSoal].romaji;
-  }
-</script> -->
 <script>
   function getSimilarAnswer(question, answers) {
     // Buat array baru untuk menyimpan jawaban yang mirip dengan soal
@@ -145,9 +83,22 @@
     { romaji: "ghi", jpg: "ihg" },
     { romaji: "jkl", jpg: "ljk" },
     { romaji: "mno", jpg: "onm" },
+    { romaji: "pqr", jpg: "rqp" },
+    { romaji: "stu", jpg: "uts" },
+    { romaji: "vwx", jpg: "xvw" },
+    { romaji: "yz", jpg: "zy" },
   ];
 
-  let { question, answers } = generateQuestionAndAnswers(allAnswers);
-  console.log("Soal:", question);
-  console.log("Jawaban:", answers);
+  //   let { question, answers } = generateQuestionAndAnswers(allAnswers);
+  $(document).on("click", "#shuffleButton", function () {
+    let { question, answers } = generateQuestionAndAnswers(allAnswers);
+    console.log("Soal:", question, allAnswers);
+    console.log("Jawaban:", answers);
+    $("#soal").text(question.romaji);
+    $(".for-box").empty();
+    let randomJawaban = answers.slice(0, 4);
+    $.each(randomJawaban, function (i, v) {
+      $(".for-box").append(`<div class="box">${v.romaji}</div>`);
+    });
+  });
 </script>
