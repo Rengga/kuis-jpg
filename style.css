@@ -1,0 +1,6 @@
+.box {
+  background-color: crimson;
+  width: fit-content;
+  padding: 4px 6px;
+  cursor: pointer;
+}

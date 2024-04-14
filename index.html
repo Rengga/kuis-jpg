@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="sect w-full">
+      <div class="soal"></div>
+      <br />
+      <div class="for-box flex w-full justify-center gap-4"></div>
+    </div>
+  </body>
+</html>
+<!-- <script>
+  var answers = [
+    {
+      romaji: "abc",
+      jpg: "cba",
+    },
+    {
+      romaji: "def",
+      jpg: "fed",
+    },
+    {
+      romaji: "ghi",
+      jpg: "ihg",
+    },
+    {
+      romaji: "jkl",
+      jpg: "ljk",
+    },
+    {
+      romaji: "mno",
+      jpg: "onm",
+    },
+  ];
+
+  var soal = soal(answers);
+
+  $(document).ready(function () {
+    answersnya();
+    $(".soal").text(soal);
+  });
+
+  function random(array) {
+    let indexSekarang = array.length,
+      randomIndex;
+    console.log(indexSekarang, "cek1");
+
+    if (indexSekarang !== 0) {
+      randomIndex = Math.floor(Math.random() * indexSekarang);
+      console.log(randomIndex, "cek2");
+
+      indexSekarang--;
+      console.log(indexSekarang, "cek3");
+      [array[indexSekarang], array[randomIndex]] = [array[randomIndex], array[indexSekarang]];
+    }
+    console.log(array, "cek4");
+    return array;
+  }
+
+  function answersnya() {
+    let randomAnswers = random(answers); // Mengacak array
+    console.log(randomAnswers, "cek5");
+
+    // Hanya mengambil 4 elemen pertama setelah diacak
+    let selectedAnswers = randomAnswers.slice(0, 4);
+
+    $.each(selectedAnswers, function (index, value) {
+      $(".for-box").append('<div class="box">' + value.romaji + "</div>");
+    });
+  }
+
+  function soal(answers) {
+    let randomSoal = Math.floor(Math.random() * answers.length);
+    return answers[randomSoal].romaji;
+  }
+</script> -->
+<script>
+  function getSimilarAnswer(question, answers) {
+    // Buat array baru untuk menyimpan jawaban yang mirip dengan soal
+    let similarAnswers = [];
+
+    // Loop melalui setiap jawaban
+    answers.forEach((answer) => {
+      // Periksa jika jawaban tidak sama dengan soal
+      if (answer.romaji !== question) {
+        // Periksa apakah ada karakter yang sama antara jawaban dan soal
+        let similarityCount = 0;
+        for (let i = 0; i < question.length; i++) {
+          if (answer.romaji.includes(question[i])) {
+            similarityCount++;
+          }
+        }
+        // Jika ada minimal satu karakter yang sama, tambahkan jawaban ke array similarAnswers
+        if (similarityCount > 0) {
+          similarAnswers.push(answer);
+        }
+      }
+    });
+
+    // Kembalikan jawaban yang mirip secara acak
+    return similarAnswers[Math.floor(Math.random() * similarAnswers.length)];
+  }
+
+  function generateQuestionAndAnswers(allAnswers) {
+    // Pilih satu jawaban sebagai soal
+    let questionIndex = Math.floor(Math.random() * allAnswers.length);
+    let question = allAnswers[questionIndex];
+
+    // Hapus jawaban yang dipilih dari array jawaban
+    let remainingAnswers = allAnswers.filter((answer, index) => index !== questionIndex);
+
+    // Pilih tiga jawaban lainnya secara acak
+    let otherAnswers = [];
+    for (let i = 0; i < 3; i++) {
+      let randomIndex = Math.floor(Math.random() * remainingAnswers.length);
+      otherAnswers.push(remainingAnswers[randomIndex]);
+      remainingAnswers.splice(randomIndex, 1);
+    }
+
+    // Pilih satu jawaban yang mirip dengan soal
+    let similarAnswer = getSimilarAnswer(question.romaji, remainingAnswers);
+
+    // Campur jawaban agar menjadi urutan acak
+    let allMixedAnswers = [question, ...otherAnswers, similarAnswer].sort(() => Math.random() - 0.5);
+
+    return { question, answers: allMixedAnswers };
+  }
+
+  //jawaban
+  let allAnswers = [
+    { romaji: "abc", jpg: "cba" },
+    { romaji: "def", jpg: "fed" },
+    { romaji: "ghi", jpg: "ihg" },
+    { romaji: "jkl", jpg: "ljk" },
+    { romaji: "mno", jpg: "onm" },
+  ];
+
+  let { question, answers } = generateQuestionAndAnswers(allAnswers);
+  console.log("Soal:", question);
+  console.log("Jawaban:", answers);
+</script>
