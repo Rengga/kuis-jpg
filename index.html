@@ -93,8 +93,8 @@
     modeSoal = "indo-jpg";
     $(".mode-soal").data("mode", modeSoal);
     $(".mode-soal").text("Indonesia ke Jepang");
-    console.log("Soal:", question, allAnswers);
-    console.log("Jawaban:", answers);
+    // console.log("Soal:", question, allAnswers);
+    // console.log("Jawaban:", answers);
     $("#soal").text(question.indo).data("indo", question.indo).data("jpg", question.jpg).data("romaji", question.romaji);
     $(".for-box").empty();
     let randomJawaban = answers.slice(0, 4);
@@ -106,8 +106,8 @@
   $(document).on("click", ".indo-jpg", function () {
     let { question, answers } = generateQuestionAndAnswers(allAnswers);
     modeSoal = "indo-jpg";
-    console.log("Soal:", question, allAnswers);
-    console.log("Jawaban:", answers);
+    // console.log("Soal:", question, allAnswers);
+    // console.log("Jawaban:", answers);
     $(".mode-soal").data("mode", modeSoal);
     $(".mode-soal").text("Indonesia ke Jepang");
     $("#soal").text(question.indo).data("indo", question.indo).data("jpg", question.jpg).data("romaji", question.romaji);
@@ -122,8 +122,8 @@
   $(document).on("click", ".jpg-indo", function () {
     let { question, answers } = generateQuestionAndAnswers(allAnswers);
     modeSoal = "jpg-romaji";
-    console.log("Soal:", question, allAnswers);
-    console.log("Jawaban:", answers);
+    // console.log("Soal:", question, allAnswers);
+    // console.log("Jawaban:", answers);
     $(".mode-soal").data("mode", modeSoal);
     $(".mode-soal").text("Jepang ke Indonesia");
     $("#soal")
@@ -146,7 +146,7 @@
     let jRomaji = $(this).data("romaji");
     let jJpg = $(this).data("jpg");
     let jIndo = $(this).data("indo");
-    console.log(modeSoalSekarang, soal, jIndo, jJpg, jRomaji, "999");
+    // console.log(modeSoalSekarang, soal, jIndo, jJpg, jRomaji, "999");
     if (soal == jIndo || soal == jRomaji || soal == jIndo) {
       $(".box-jawaban").removeClass("salah");
       $(elem).removeClass("benar pointer-events-none");
@@ -155,12 +155,12 @@
       if (modeSoalSekarang == "indo-jpg") {
         setTimeout(function () {
           $(".indo-jpg").trigger("click");
-          console.log("1 detik");
+          // console.log("1 detik");
         }, 1000);
       } else {
         setTimeout(function () {
           $(".jpg-indo").trigger("click");
-          console.log("1 detik");
+          // console.log("1 detik");
         }, 1000);
       }
     } else {
