@@ -1,6 +1,75 @@
-.box {
-  background-color: crimson;
-  width: fit-content;
-  padding: 4px 6px;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+* {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: normal;
+}
+
+body.i-j {
+  color: #6e5773;
+}
+body.j-i {
+  color: #7286d3;
+}
+
+.box-jawaban {
+  background-color: #776d8a;
+  width: 160px;
+  padding: 6px 8px;
   cursor: pointer;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  border: 4px solid #ffb6b9;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.j-i .box-jawaban {
+  background-color: #7286d3;
+  border: 4px solid #ffd966;
+}
+.btn-mode {
+  border: 2px solid #6e5773;
+  padding: 4px 10px;
+  border-radius: 10px;
+  width: fit-content;
+}
+.j-i .btn-mode {
+  border: 2px solid #7286d3;
+}
+.menu a {
+  background-color: #776d8a;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+.j-i .menu a {
+  background-color: #7286d3 !important;
+  color: white;
+}
+
+a.yt {
+  background-color: #e36387;
+}
+
+.credit-box {
+  border-radius: 20px;
+  background-color: #776d8a;
+}
+
+.benar {
+  background-color: #679b9b !important;
+}
+.salah {
+  background-color: #e36387 !important;
+}
+
+.i-j {
+  background-color: #f3e6e3;
+}
+
+.j-i {
+  background-color: #eef1ff;
 }

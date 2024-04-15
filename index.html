@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Simpel Kuis</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script
@@ -13,18 +13,31 @@
       referrerpolicy="no-referrer"
     ></script>
   </head>
-  <body>
-    <div class="sect w-full">
-      <div id="soal"></div>
+  <body class="h-screen i-j py-2 px-4">
+    <div class="menu flex gap-4 pt-4">
+      <a href="tabelbahasa.html">Tabel Bahasa</a>
+      <a href="credit.html"> Credit</a>
+    </div>
+    <div class="sect w-full flex h-5/6 flex-col justify-center items-center gap-2">
+      <div class="mode-soal text-3xl font-bold mb-4" data-mode="indo-jpg">Indonesia ke Jepang</div>
+      <div id="soal" class="mt-4 font-bold text-xl capitalize text-center"></div>
       <br />
-      <div class="for-box flex w-full justify-center gap-4"></div>
+      <div class="flex w-full justify-center">
+        <div class="for-box flex flex-wrap gap-4 h-fit justify-center"></div>
+      </div>
     </div>
 
-    <button id="shuffleButton">Shuffle</button>
+    <div class="flex w-full items-center flex-col gap-2">
+      <button class="indo-jpg btn-mode">Indonesia ke Jepang</button>
+      <button class="jpg-indo btn-mode">Jepang ke Indonesia</button>
+    </div>
   </body>
 </html>
-
+<script src="jawaban.js"></script>
 <script>
+  var modeSoal = "indo-jpg";
+  var lastQuestion;
+
   function getSimilarAnswer(question, answers) {
     // Buat array baru untuk menyimpan jawaban yang mirip dengan soal
     let similarAnswers = [];
@@ -61,7 +74,7 @@
 
     // Pilih tiga jawaban lainnya secara acak
     let otherAnswers = [];
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 2; i++) {
       let randomIndex = Math.floor(Math.random() * remainingAnswers.length);
       otherAnswers.push(remainingAnswers[randomIndex]);
       remainingAnswers.splice(randomIndex, 1);
@@ -69,36 +82,90 @@
 
     // Pilih satu jawaban yang mirip dengan soal
     let similarAnswer = getSimilarAnswer(question.romaji, remainingAnswers);
-
     // Campur jawaban agar menjadi urutan acak
     let allMixedAnswers = [question, ...otherAnswers, similarAnswer].sort(() => Math.random() - 0.5);
 
     return { question, answers: allMixedAnswers };
   }
 
-  //jawaban
-  let allAnswers = [
-    { romaji: "abc", jpg: "cba" },
-    { romaji: "def", jpg: "fed" },
-    { romaji: "ghi", jpg: "ihg" },
-    { romaji: "jkl", jpg: "ljk" },
-    { romaji: "mno", jpg: "onm" },
-    { romaji: "pqr", jpg: "rqp" },
-    { romaji: "stu", jpg: "uts" },
-    { romaji: "vwx", jpg: "xvw" },
-    { romaji: "yz", jpg: "zy" },
-  ];
-
-  //   let { question, answers } = generateQuestionAndAnswers(allAnswers);
-  $(document).on("click", "#shuffleButton", function () {
+  $(document).ready(function () {
     let { question, answers } = generateQuestionAndAnswers(allAnswers);
+    modeSoal = "indo-jpg";
+    $(".mode-soal").data("mode", modeSoal);
+    $(".mode-soal").text("Indonesia ke Jepang");
     console.log("Soal:", question, allAnswers);
     console.log("Jawaban:", answers);
-    $("#soal").text(question.romaji);
+    $("#soal").text(question.indo).data("indo", question.indo).data("jpg", question.jpg).data("romaji", question.romaji);
     $(".for-box").empty();
     let randomJawaban = answers.slice(0, 4);
     $.each(randomJawaban, function (i, v) {
-      $(".for-box").append(`<div class="box">${v.romaji}</div>`);
+      $(".for-box").append(`<div class="box-jawaban" data-indo="${v.indo}" data-jpg="${v.jpg}" data-romaji="${v.romaji}">${v.jpg}<br>${v.romaji}</div>`);
     });
+  });
+
+  $(document).on("click", ".indo-jpg", function () {
+    let { question, answers } = generateQuestionAndAnswers(allAnswers);
+    modeSoal = "indo-jpg";
+    console.log("Soal:", question, allAnswers);
+    console.log("Jawaban:", answers);
+    $(".mode-soal").data("mode", modeSoal);
+    $(".mode-soal").text("Indonesia ke Jepang");
+    $("#soal").text(question.indo).data("indo", question.indo).data("jpg", question.jpg).data("romaji", question.romaji);
+    $(".for-box").empty();
+    let randomJawaban = answers.slice(0, 4);
+    $.each(randomJawaban, function (i, v) {
+      $(".for-box").append(`<div class="box-jawaban" data-indo="${v.indo}" data-jpg="${v.jpg}" data-romaji="${v.romaji}">${v.jpg}<br>${v.romaji}</div>`);
+    });
+    $("body").removeClass("j-i").addClass("i-j");
+  });
+
+  $(document).on("click", ".jpg-indo", function () {
+    let { question, answers } = generateQuestionAndAnswers(allAnswers);
+    modeSoal = "jpg-romaji";
+    console.log("Soal:", question, allAnswers);
+    console.log("Jawaban:", answers);
+    $(".mode-soal").data("mode", modeSoal);
+    $(".mode-soal").text("Jepang ke Indonesia");
+    $("#soal")
+      .text(question.jpg + " : " + question.romaji)
+      .data("indo", question.indo)
+      .data("jpg", question.jpg)
+      .data("romaji", question.romaji);
+    $(".for-box").empty();
+    let randomJawaban = answers.slice(0, 4);
+    $.each(randomJawaban, function (i, v) {
+      $(".for-box").append(`<div class="box-jawaban" data-indo="${v.indo}" data-jpg="${v.jpg}" data-romaji="${v.romaji}">${v.indo}</div>`);
+    });
+    $("body").removeClass("i-j").addClass("j-i");
+  });
+
+  $(document).on("click", ".box-jawaban", function () {
+    let elem = $(this);
+    let modeSoalSekarang = $(".mode-soal").data("mode");
+    let soal = $("#soal").data("indo");
+    let jRomaji = $(this).data("romaji");
+    let jJpg = $(this).data("jpg");
+    let jIndo = $(this).data("indo");
+    console.log(modeSoalSekarang, soal, jIndo, jJpg, jRomaji, "999");
+    if (soal == jIndo || soal == jRomaji || soal == jIndo) {
+      $(".box-jawaban").removeClass("salah");
+      $(elem).removeClass("benar pointer-events-none");
+      $(elem).addClass("benar pointer-events-none");
+      $(".box-jawaban").addClass("pointer-events-none");
+      if (modeSoalSekarang == "indo-jpg") {
+        setTimeout(function () {
+          $(".indo-jpg").trigger("click");
+          console.log("1 detik");
+        }, 1000);
+      } else {
+        setTimeout(function () {
+          $(".jpg-indo").trigger("click");
+          console.log("1 detik");
+        }, 1000);
+      }
+    } else {
+      $(".box-jawaban").removeClass("salah");
+      $(elem).addClass("salah");
+    }
   });
 </script>
