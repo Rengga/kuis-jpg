@@ -33,6 +33,7 @@ var allAnswers = [
   { romaji: "kawaii", jpg: "かわいい / 可愛い", indo: "lucu / manis" },
   { romaji: "tanoshii", jpg: "たのしい / 楽しい", indo: "menyenangkan" },
   { romaji: "uta", jpg: "うた / 歌", indo: "lagu" },
-  { romaji: "minna-san", jpg: "みんなさん / 水", indo: "semua orang" },
+  { romaji: "minna-san", jpg: "みんなさん", indo: "semua orang" },
   { romaji: "ki", jpg: "き / 木", indo: "pohon" },
+  { romaji: "hi", jpg: "ひ/ 火", indo: "api" },
 ];
