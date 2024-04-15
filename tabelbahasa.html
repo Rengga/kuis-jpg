@@ -40,9 +40,9 @@
         <thead>
           <tr>
             <th>No</th>
-            <th>Romaji</th>
+            <th>Indonesia</th>
             <th>JPG</th>
-            <th>Indonesian</th>
+            <th>Romaji</th>
           </tr>
         </thead>
         <tbody></tbody>
@@ -62,9 +62,9 @@
       $("<td>")
         .text(index + 1)
         .appendTo(row); // Add row number
-      $("<td>").text(item.romaji).appendTo(row);
-      $("<td>").text(item.jpg).appendTo(row);
       $("<td>").text(item.indo).appendTo(row);
+      $("<td>").text(item.jpg).appendTo(row);
+      $("<td>").text(item.romaji).appendTo(row);
     });
     $(".total").text(totalKata);
   }
