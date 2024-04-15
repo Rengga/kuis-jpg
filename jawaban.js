@@ -1,4 +1,4 @@
-//h-1
+//h-2
 var allAnswers = [
   { romaji: "tsukue", jpg: "つくえ / 机", indo: "meja" },
   { romaji: "isu", jpg: "いす / 椅子", indo: "kursi" },
@@ -14,12 +14,13 @@ var allAnswers = [
   { romaji: "ito", jpg: "いと / 糸", indo: "benang / serat" },
   { romaji: "tsuki", jpg: "つき / 月", indo: "bulan" },
   { romaji: "toshi", jpg: "とし / 年", indo: "tahun" },
-  { romaji: "doa / dooru / tobira", jpg: "どあ / ドア / (とびら / 扉)", indo: "kasur" },
+  { romaji: "doa / dooru / tobira", jpg: "どあ / ドア / (とびら / 扉)", indo: "pintu" },
   { romaji: "mado", jpg: "まど / 窓", indo: "jendela" },
-  { romaji: "curtain / katen", jpg: "カーテン / かてん ", indo: "kasur" },
+  { romaji: "curtain / katen", jpg: "カーテン / かてん ", indo: "tirai" },
   { romaji: "garasu", jpg: "ガラス / がらす", indo: "kaca" },
   { romaji: "hon", jpg: "ほん / 本", indo: "buku" },
   { romaji: "borupen", jpg: "ボールペン / ぼーるぺん", indo: "pulpen" },
   { romaji: "Enpitsu", jpg: "えんぴつ / 鉛筆", indo: "pensil" },
   { romaji: "keshigomu", jpg: "けしゴム / 消しゴム", indo: "penghapus" },
+  { romaji: "beddo", jpg: "ベッド / べっど", indo: "Kasur" },
 ];
