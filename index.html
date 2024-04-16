@@ -28,8 +28,9 @@
     </div>
 
     <div class="flex w-full items-center flex-col gap-2">
-      <button class="indo-jpg btn-mode">Indonesia ke Jepang</button>
-      <button class="jpg-indo btn-mode">Jepang ke Indonesia</button>
+      <button class="indo-jpg btn-mode w-56">Indonesia ke Jepang</button>
+      <button class="jpg-indo btn-mode w-56">Jepang ke Indonesia</button>
+      <button class="indo-kanji btn-mode w-56">Indonesia ke Kana / Kanji</button>
     </div>
   </body>
 </html>
@@ -121,7 +122,7 @@
 
   $(document).on("click", ".jpg-indo", function () {
     let { question, answers } = generateQuestionAndAnswers(allAnswers);
-    modeSoal = "jpg-romaji";
+    modeSoal = "jpg-indo";
     // console.log("Soal:", question, allAnswers);
     // console.log("Jawaban:", answers);
     $(".mode-soal").data("mode", modeSoal);
@@ -137,6 +138,22 @@
       $(".for-box").append(`<div class="box-jawaban" data-indo="${v.indo}" data-jpg="${v.jpg}" data-romaji="${v.romaji}">${v.indo}</div>`);
     });
     $("body").removeClass("i-j").addClass("j-i");
+  });
+
+  $(document).on("click", ".indo-kanji", function () {
+    let { question, answers } = generateQuestionAndAnswers(allAnswers);
+    modeSoal = "indo-romaji";
+    // console.log("Soal:", question, allAnswers);
+    // console.log("Jawaban:", answers);
+    $(".mode-soal").data("mode", modeSoal);
+    $(".mode-soal").text("Indonesia ke Kana / Kanji");
+    $("#soal").text(question.indo).data("indo", question.indo).data("jpg", question.jpg).data("romaji", question.romaji);
+    $(".for-box").empty();
+    let randomJawaban = answers.slice(0, 4);
+    $.each(randomJawaban, function (i, v) {
+      $(".for-box").append(`<div class="box-jawaban" data-indo="${v.indo}" data-jpg="${v.jpg}" data-romaji="${v.romaji}">${v.jpg}</div>`);
+    });
+    $("body").removeClass("j-i").addClass("i-j");
   });
 
   $(document).on("click", ".box-jawaban", function () {
@@ -157,9 +174,14 @@
           $(".indo-jpg").trigger("click");
           // console.log("1 detik");
         }, 1000);
-      } else {
+      } else if (modeSoalSekarang == "jpg-indo") {
         setTimeout(function () {
           $(".jpg-indo").trigger("click");
+          // console.log("1 detik");
+        }, 1000);
+      } else {
+        setTimeout(function () {
+          $(".indo-kanji").trigger("click");
           // console.log("1 detik");
         }, 1000);
       }

@@ -45,4 +45,10 @@ var allAnswers = [
   { romaji: "mieru", jpg: "みえる / 見える", indo: "terlihat / dapat dilihat" },
   { romaji: "sensei", jpg: "せんせい / 先生", indo: "guru / pengajar" },
   { romaji: "kaeru", jpg: "かえる / 変える", indo: "mengubah / mengganti" },
+  { romaji: "hayai", jpg: "はやい / 早い", indo: "cepat" },
+  { romaji: "tatakai", jpg: "たたかい / 戦い", indo: "pertempuran / perjuangan" },
+  { romaji: "yawarageru", jpg: "やわらげる / 和らげる", indo: "meringankan / mengurangi" },
+  { romaji: "hiku", jpg: "ひく / 引く (konteks umum)", indo: "menarik / mengeluarkan (konteks umum)" },
+  { romaji: "hiku", jpg: "ひく / 引く (konteks musik)", indo: "memainkan / memetik (konteks musik)" },
+  { romaji: "kau", jpg: "かう / 買う", indo: "membeli" },
 ];
