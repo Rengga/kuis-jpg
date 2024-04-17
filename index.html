@@ -31,6 +31,7 @@
       <button class="indo-jpg btn-mode w-56">Indonesia ke Jepang</button>
       <button class="jpg-indo btn-mode w-56">Jepang ke Indonesia</button>
       <button class="indo-kanji btn-mode w-56">Indonesia ke Kana / Kanji</button>
+      <button class="rmj-kanji btn-mode w-56">Romaji ke Kana / Kanji</button>
     </div>
   </body>
 </html>
@@ -117,7 +118,7 @@
     $.each(randomJawaban, function (i, v) {
       $(".for-box").append(`<div class="box-jawaban" data-indo="${v.indo}" data-jpg="${v.jpg}" data-romaji="${v.romaji}">${v.jpg}<br>${v.romaji}</div>`);
     });
-    $("body").removeClass("j-i").addClass("i-j");
+    $("body").removeClass("i-j i-k r-k").addClass("i-j");
   });
 
   $(document).on("click", ".jpg-indo", function () {
@@ -137,7 +138,7 @@
     $.each(randomJawaban, function (i, v) {
       $(".for-box").append(`<div class="box-jawaban" data-indo="${v.indo}" data-jpg="${v.jpg}" data-romaji="${v.romaji}">${v.indo}</div>`);
     });
-    $("body").removeClass("i-j").addClass("j-i");
+    $("body").removeClass("j-i i-k r-k").addClass("j-i");
   });
 
   $(document).on("click", ".indo-kanji", function () {
@@ -153,7 +154,23 @@
     $.each(randomJawaban, function (i, v) {
       $(".for-box").append(`<div class="box-jawaban" data-indo="${v.indo}" data-jpg="${v.jpg}" data-romaji="${v.romaji}">${v.jpg}</div>`);
     });
-    $("body").removeClass("j-i").addClass("i-j");
+    $("body").removeClass("j-i i-j r-k").addClass("i-k");
+  });
+
+  $(document).on("click", ".rmj-kanji", function () {
+    let { question, answers } = generateQuestionAndAnswers(allAnswers);
+    modeSoal = "rmj-romaji";
+    // console.log("Soal:", question, allAnswers);
+    // console.log("Jawaban:", answers);
+    $(".mode-soal").data("mode", modeSoal);
+    $(".mode-soal").text("Romaji ke Kana / Kanji");
+    $("#soal").text(question.romaji).data("indo", question.indo).data("jpg", question.jpg).data("romaji", question.romaji);
+    $(".for-box").empty();
+    let randomJawaban = answers.slice(0, 4);
+    $.each(randomJawaban, function (i, v) {
+      $(".for-box").append(`<div class="box-jawaban" data-indo="${v.indo}" data-jpg="${v.jpg}" data-romaji="${v.romaji}">${v.jpg}</div>`);
+    });
+    $("body").removeClass("j-i i-j i-k").addClass("r-k");
   });
 
   $(document).on("click", ".box-jawaban", function () {
@@ -179,9 +196,14 @@
           $(".jpg-indo").trigger("click");
           // console.log("1 detik");
         }, 1000);
+      } else if (modeSoalSekarang == "indo-romaji") {
+        setTimeout(function () {
+          $(".jpg-indo").trigger("click");
+          // console.log("1 detik");
+        }, 1000);
       } else {
         setTimeout(function () {
-          $(".indo-kanji").trigger("click");
+          $(".rmj-kanji").trigger("click");
           // console.log("1 detik");
         }, 1000);
       }

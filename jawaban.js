@@ -1,4 +1,8 @@
-//h-2
+// tabel 20
+// i-j i-k r-k ----- j-i
+// j-i i-k r-k ----- i-j
+// j-i i-j r-k ----- i-k
+// j-i i-j i-k ----- r-k
 var allAnswers = [
   { romaji: "tsukue", jpg: "つくえ / 机", indo: "meja" },
   { romaji: "isu", jpg: "いす / 椅子", indo: "kursi" },
@@ -51,4 +55,19 @@ var allAnswers = [
   { romaji: "hiku", jpg: "ひく / 引く (konteks umum)", indo: "menarik / mengeluarkan (konteks umum)" },
   { romaji: "hiku", jpg: "ひく / 引く (konteks musik)", indo: "memainkan / memetik (konteks musik)" },
   { romaji: "kau", jpg: "かう / 買う", indo: "membeli" },
+  { romaji: "aikido", jpg: "あいきどう / 合気道", indo: "seni bela diri jepang" },
+  { romaji: "aisatsu", jpg: "あいさつ / 挨拶", indo: "salam / ucapan" },
+  { romaji: "aisu", jpg: "アイス / あいす", indo: "es" },
+  { romaji: "aisukurīmu", jpg: "アイスクリーム / あいすくりーむ", indo: "es krim" },
+  { romaji: "aisukōhī", jpg: "アイスコーヒー / あいすこーひー", indo: "es kopi" },
+  { romaji: "ma / aida", jpg: "あいだ / 間", indo: "antara ~ dan ~" },
+  { romaji: "ma o akeru", jpg: "まをあける / 間を開ける", indo: "memberi jarak atau jeda / memberi istirahat " },
+  { romaji: "sōte", jpg: "あいて / 相手", indo: "lawan / pasangan / orang lain / mitra" },
+  { romaji: "aidea", jpg: "アイディア / あいでぃあ", indo: "ide" },
+  { romaji: "aiti", jpg: "アイティー / あいてぃー", indo: "IT" },
+  { romaji: "suteiru", jpg: "スティール / すている", indo: "steel (baja)" },
+  { romaji: "airon", jpg: "アイロン / あいろん", indo: "besi" },
+  { romaji: "aimasu (formal) / au", jpg: " あいます / 会います / あう / 会う", indo: "bertemu" },
+  { romaji: "autodōa", jpg: "アウトドア / あうとどあ", indo: "outdoor (luar ruangan)" },
+  { romaji: "yōhin", jpg: "ようひん / 用品", indo: "barang / perlengkapan" },
 ];

@@ -10,6 +10,12 @@ body.i-j {
 body.j-i {
   color: #7286d3;
 }
+body.i-k {
+  color: #756ab6;
+}
+body.r-k {
+  color: #e97777;
+}
 
 .box-jawaban {
   background-color: #776d8a;
@@ -29,6 +35,14 @@ body.j-i {
   background-color: #7286d3;
   border: 4px solid #ffd966;
 }
+.i-k .box-jawaban {
+  background-color: #756ab6;
+  border: 4px solid #e0aed0;
+}
+.r-k .box-jawaban {
+  background-color: #9e7676;
+  border: 4px solid #fcddb0;
+}
 .btn-mode {
   border: 2px solid #6e5773;
   padding: 4px 10px;
@@ -37,6 +51,12 @@ body.j-i {
 }
 .j-i .btn-mode {
   border: 2px solid #7286d3;
+}
+.i-k .btn-mode {
+  border: 2px solid #756ab6;
+}
+.r-k .btn-mode {
+  border: 2px solid #9e7676;
 }
 .menu a {
   background-color: #776d8a;
@@ -47,6 +67,14 @@ body.j-i {
 
 .j-i .menu a {
   background-color: #7286d3 !important;
+  color: white;
+}
+.i-k .menu a {
+  background-color: #756ab6 !important;
+  color: white;
+}
+.r-k .menu a {
+  background-color: #9e7676 !important;
   color: white;
 }
 
@@ -69,9 +97,14 @@ a.yt {
 .i-j {
   background-color: #f3e6e3;
 }
-
 .j-i {
   background-color: #eef1ff;
+}
+.i-k {
+  background-color: #ffe5e5;
+}
+.r-k {
+  background-color: #fffad7;
 }
 
 @media only screen and (max-width: 360px) {
