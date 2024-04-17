@@ -70,4 +70,8 @@ var allAnswers = [
   { romaji: "aimasu (formal) / au", jpg: " あいます / 会います / あう / 会う", indo: "bertemu" },
   { romaji: "autodōa", jpg: "アウトドア / あうとどあ", indo: "outdoor (luar ruangan)" },
   { romaji: "yōhin", jpg: "ようひん / 用品", indo: "barang / perlengkapan" },
+  { romaji: "autoretto mōru", jpg: "アウトレットモール / あうとれっと もーる", indo: "outlet mall" },
+  { romaji: "ao / aoi", jpg: "あお / あおい / 青 / 青い", indo: "biru" },
+  { romaji: "aozora", jpg: "あおぞら / 青空", indo: "langit biru / langit cerah /cuaca bagus" },
+  { romaji: "aka", jpg: "あか / 赤", indo: "merah" },
 ];
