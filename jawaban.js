@@ -26,7 +26,7 @@ var allAnswers = [
   { romaji: "borupen", jpg: "ボールペン / ぼーるぺん", indo: "pulpen" },
   { romaji: "Enpitsu", jpg: "えんぴつ / 鉛筆", indo: "pensil" },
   { romaji: "keshigomu", jpg: "けしゴム / 消しゴム", indo: "penghapus" },
-  { romaji: "beddo", jpg: "ベッド / べっど", indo: "Kasur" },
+  { romaji: "futon", jpg: "ふとん / 布団", indo: "kasur" },
   { romaji: "koe", jpg: "こえ / 声", indo: "suara" },
   { romaji: "ai", jpg: "あい / 愛", indo: "cinta" },
   { romaji: "yama", jpg: "やま / 山", indo: "gunung" },
