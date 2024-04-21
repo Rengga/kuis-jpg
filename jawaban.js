@@ -1,4 +1,4 @@
-// tabel 20
+// tabel 70
 // i-j i-k r-k ----- j-i
 // j-i i-k r-k ----- i-j
 // j-i i-j r-k ----- i-k
