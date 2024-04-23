@@ -1,4 +1,4 @@
-// tabel 70
+// tabel 88
 // i-j i-k r-k ----- j-i
 // j-i i-k r-k ----- i-j
 // j-i i-j r-k ----- i-k
@@ -102,6 +102,16 @@ var allAnswers = [
   { romaji: "azukaru", jpg: "あずかる / 預かる", indo: "mengasuh / menjaga" },
   { romaji: "azukeru", jpg: "あずける / 預ける", indo: "menitipkan / menyimpan" },
   { romaji: "asoko", jpg: "あそこ", indo: "di sana" },
-  { romaji: "soko", jpg: "そこ", indo: "sana" },
-  { romaji: "asobi", jpg: "あそび / 遊び", indo: "bermain" },
+  { romaji: "soko / achira", jpg: "そこ / あちら", indo: "sana" },
+  { romaji: "asobi / asobu", jpg: "あそび / あそぶ / 遊び / 遊ぶ", indo: "bermain" },
+  { romaji: "asobi ni kuru", jpg: "あそびにくる / 遊びに来る", indo: "datang untuk bermain" },
+  { romaji: "asobou", jpg: "あそぼう / 遊ぼう", indo: "mari bermain" },
+  { romaji: "atatakai", jpg: "あたたかい / 暖かい", indo: "hangat" },
+  { romaji: "atatameru / atatamemasu", jpg: "あたためる / あたためます / 温める / 温めます", indo: "memanaskan" },
+  { romaji: "atama", jpg: "あたま / 頭", indo: "kepala" },
+  { romaji: "atarashii", jpg: "あたらしい / 新しい", indo: "baru" },
+  { romaji: "atarashiku", jpg: "あたらしく / 新しく", indo: "secara baru(segar/baru dibeli)" },
+  { romaji: "atsui", jpg: "あつい / 暑い", indo: "panas" },
+  { romaji: "atsui", jpg: "あつい / 厚い", indo: "tebal" },
+  { romaji: "futoi", jpg: "ふとい / 太い", indo: "ketebalan" },
 ];
