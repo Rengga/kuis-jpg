@@ -18,13 +18,48 @@
       <a href="tabelbahasa.html">Tabel Bahasa</a>
       <a href="credit.html"> Credit</a>
     </div>
-    <div class="sect w-full flex flex-col justify-center items-center gap-2 my-24">
+    <div class="sect w-full flex flex-col justify-center items-center gap-2 my-24 relative">
+      <div class="absolute w-full h-full z-10 hi-ka">
+        <div class="flex w-full justify-center gap-4 my-2">
+          <div class="t-hiragana text-white aktif cursor-pointer">Hiragana</div>
+          <div class="t-katakana text-white cursor-pointer">Katakana</div>
+        </div>
+        <div class="page-hira text-white p-2">
+          <h2>Gojuuon</h2>
+          <div class="gojuuon bagian-ini"></div>
+          <h2>Dakuon</h2>
+          <div class="dakuon bagian-ini"></div>
+          <h2>handakuon</h2>
+          <div class="handakuon bagian-ini"></div>
+          <h2>Sokuon</h2>
+          <div class="sokuon bagian-ini"></div>
+          <h2>Youon</h2>
+          <div class="youon bagian-ini"></div>
+        </div>
+
+        <div class="page-kana text-white p-2">
+          <h2>Gojuuon</h2>
+          <div class="gojuuon bagian-ini"></div>
+          <h2>Dakuon</h2>
+          <div class="dakuon bagian-ini"></div>
+          <h2>handakuon</h2>
+          <div class="handakuon bagian-ini"></div>
+          <h2>Sokuon</h2>
+          <div class="sokuon bagian-ini"></div>
+          <h2>Youon</h2>
+          <div class="youon bagian-ini"></div>
+        </div>
+        <div class="flex w-full justify-center">
+          <button class="flex text-white mt-2 underline font-bold tutup">TUTUP</button>
+        </div>
+      </div>
       <div class="mode-soal text-3xl font-bold mb-4" data-mode="indo-jpg">Indonesia ke Jepang</div>
       <div id="soal" class="mt-4 font-bold text-xl capitalize text-center"></div>
       <br />
       <div class="flex w-full justify-center">
         <div class="for-box flex flex-wrap gap-4 h-fit justify-center"></div>
       </div>
+      <div class="hira-kana mt-2 cursor-pointer">Hiragana / Katakana</div>
     </div>
 
     <div class="flex w-full items-center flex-col gap-2">
@@ -36,6 +71,8 @@
   </body>
 </html>
 <script src="jawaban.js"></script>
+<script src="hiragana.js"></script>
+<script src="katakana.js"></script>
 <script>
   var modeSoal = "indo-jpg";
   var lastQuestion;
@@ -91,6 +128,8 @@
   }
 
   $(document).ready(function () {
+    hiragana();
+    katakana();
     let { question, answers } = generateQuestionAndAnswers(allAnswers);
     modeSoal = "indo-jpg";
     $(".mode-soal").data("mode", modeSoal);
@@ -130,6 +169,7 @@
       $(".for-box").append(`<div class="box-jawaban" data-indo="${v.indo}" data-jpg="${v.jpg}" data-romaji="${v.romaji}">${v.jpg}<br>${v.romaji}</div>`);
     });
     $("body").removeClass("i-j i-k r-k").addClass("i-j");
+    $(".hira-kana").hide();
   });
 
   $(document).on("click", ".jpg-indo", function () {
@@ -150,6 +190,7 @@
       $(".for-box").append(`<div class="box-jawaban" data-indo="${v.indo}" data-jpg="${v.jpg}" data-romaji="${v.romaji}">${v.indo}</div>`);
     });
     $("body").removeClass("j-i i-k r-k").addClass("j-i");
+    $(".hira-kana").hide();
   });
 
   $(document).on("click", ".indo-kanji", function () {
@@ -166,6 +207,7 @@
       $(".for-box").append(`<div class="box-jawaban" data-indo="${v.indo}" data-jpg="${v.jpg}" data-romaji="${v.romaji}">${v.jpg}</div>`);
     });
     $("body").removeClass("j-i i-j r-k").addClass("i-k");
+    $(".hira-kana").show();
   });
 
   $(document).on("click", ".rmj-kanji", function () {
@@ -182,6 +224,7 @@
       $(".for-box").append(`<div class="box-jawaban" data-indo="${v.indo}" data-jpg="${v.jpg}" data-romaji="${v.romaji}">${v.jpg}</div>`);
     });
     $("body").removeClass("j-i i-j i-k").addClass("r-k");
+    $(".hira-kana").show();
   });
 
   $(document).on("click", ".box-jawaban", function () {
@@ -222,5 +265,67 @@
       $(".box-jawaban").removeClass("salah");
       $(elem).addClass("salah");
     }
+  });
+
+  function hiragana() {
+    $.each(hira, function (i, v) {
+      let kana = `<div class="hira-isi">${v.kana} ${v.roumaji}</div>`;
+      if (v.type == "gojuuon") {
+        $(".page-hira .gojuuon").append(kana);
+      }
+      if (v.type == "dakuon") {
+        $(".page-hira .dakuon").append(kana);
+      }
+      if (v.type == "handakuon") {
+        $(".page-hira .handakuon").append(kana);
+      }
+      if (v.type == "sokuon") {
+        $(".page-hira .sokuon").append(kana);
+      }
+      if (v.type == "youon") {
+        $(".page-hira .youon").append(kana);
+      }
+    });
+  }
+
+  function katakana() {
+    $.each(kata, function (i, v) {
+      let kana = `<div class="kana-isi">${v.kana} ${v.roumaji}</div>`;
+      if (v.type == "gojuuon") {
+        $(".page-kana .gojuuon").append(kana);
+      }
+      if (v.type == "dakuon") {
+        $(".page-kana .dakuon").append(kana);
+      }
+      if (v.type == "handakuon") {
+        $(".page-kana .handakuon").append(kana);
+      }
+      if (v.type == "sokuon") {
+        $(".page-kana .sokuon").append(kana);
+      }
+      if (v.type == "youon") {
+        $(".page-kana .youon").append(kana);
+      }
+    });
+  }
+
+  $(document).on("click", ".hira-kana", function () {
+    $(".hi-ka").show();
+  });
+  $(document).on("click", ".btn-mode, .tutup", function () {
+    $(".hi-ka").hide();
+  });
+
+  $(document).on("click", ".t-hiragana", function () {
+    $(".t-katakana").removeClass("aktif");
+    $(this).addClass("aktif");
+    $(".page-hira").show();
+    $(".page-kana").hide();
+  });
+  $(document).on("click", ".t-katakana", function () {
+    $(".t-hiragana").removeClass("aktif");
+    $(this).addClass("aktif");
+    $(".page-hira").hide();
+    $(".page-kana").show();
   });
 </script>
