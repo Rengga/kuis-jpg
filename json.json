@@ -1,4 +1,4 @@
-{
+[
   { romaji: "tsukue", jpg: "つくえ / 机", indo: "meja" },
   { romaji: "isu", jpg: "いす / 椅子", indo: "kursi" },
   { romaji: "tana", jpg: "たな / 田な", indo: "ladang" },
@@ -109,4 +109,4 @@
   { romaji: "atsui", jpg: "あつい / 暑い", indo: "panas" },
   { romaji: "atsui", jpg: "あつい / 厚い", indo: "tebal" },
   { romaji: "futoi", jpg: "ふとい / 太い", indo: "ketebalan" },
-};
+];
