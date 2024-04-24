@@ -103,6 +103,13 @@
     $.each(randomJawaban, function (i, v) {
       $(".for-box").append(`<div class="box-jawaban" data-indo="${v.indo}" data-jpg="${v.jpg}" data-romaji="${v.romaji}">${v.jpg}<br>${v.romaji}</div>`);
     });
+
+    $.getJSON("https://rengga.github.io/id-jp-json/json.json", function (data) {
+      $.each(data, function (key, value) {
+        console.log(value);
+        // Lakukan sesuatu dengan data di sini
+      });
+    });
   });
 
   $(document).on("click", ".indo-jpg", function () {
