@@ -1,4 +1,5 @@
 // tabel 88
+// hal 4 kosakatan tingkat pemula
 // i-j i-k r-k ----- j-i
 // j-i i-k r-k ----- i-j
 // j-i i-j r-k ----- i-k
@@ -111,7 +112,23 @@ var allAnswers = [
   { romaji: "atama", jpg: "あたま / 頭", indo: "kepala" },
   { romaji: "atarashii", jpg: "あたらしい / 新しい", indo: "baru" },
   { romaji: "atarashiku", jpg: "あたらしく / 新しく", indo: "secara baru(segar/baru dibeli)" },
-  { romaji: "atsui", jpg: "あつい / 暑い", indo: "panas" },
-  { romaji: "atsui", jpg: "あつい / 厚い", indo: "tebal" },
-  { romaji: "futoi", jpg: "ふとい / 太い", indo: "ketebalan" },
+  { romaji: "atsui", jpg: "あつい / 暑い", indo: "panas" }, // batas excel
+  { romaji: "ohayoo (gozaimasu)", jpg: "おはよう（ございます）", indo: "selamat pagi" },
+  { romaji: "konnichiwa", jpg: "こんにちは", indo: "halo / selamat siang" },
+  { romaji: "konbanwa", jpg: "こんばんは", indo: "selamat malam" },
+  { romaji: "jaa, mata", jpg: "じゃあ、また", indo: "sampai jumpa" },
+  { romaji: "oyasumi (nasai)", jpg: "おやすみ（なさい）", indo: "Selamat tidur / Selamat beristirahat." },
+  { romaji: "shitsureeshimasu", jpg: "しつれいします / 失礼します", indo: "permisi, saya duluan" },
+  { romaji: "otsukaresama (deshita)", jpg: "おつかれさま (でした) / お疲れさま (でした)", indo: "Sampai jumpa/ terima kasih atas kerja kerasnya" },
+  { romaji: "kore", jpg: "これ", indo: "ini" },
+  { romaji: "ame", jpg: "あめ / 飴", indo: "permen" },
+  { romaji: "ame", jpg: "あめ / 雨", indo: "hujan" },
+  { romaji: "purezento", jpg: "プレゼント", indo: "hadiah" },
+  { romaji: "arigatou gozaimasu", jpg: "ありがとうございます", indo: "terima kasih" },
+  { romaji: "sumimasen", jpg: "すみません /  済みません", indo: "maaf (sopan/formal)" },
+  { romaji: "gomen nasai", jpg: "ごめんなさい", indo: "maaf (umum/santai)" },
+  { romaji: "(doomo) arigatoo", jpg: "（どうも）ありがとう", indo: "Terima kasih banyak" },
+  { romaji: "doomo", jpg: "どうも", indo: "Makasih" },
+  { romaji: "otoshimashita yo", jpg: "おとしましたよ / 落としましたよ", indo: "Saya menjatuhkannya" },
+  { romaji: "doozo", jpg: "どうぞ", indo: "Silakan" },
 ];
