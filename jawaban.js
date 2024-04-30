@@ -1,5 +1,5 @@
 // tabel 88
-// hal 4 kosakatan tingkat pemula
+// hal 5 kosakatan tingkat pemula
 // i-j i-k r-k ----- j-i
 // j-i i-k r-k ----- i-j
 // j-i i-j r-k ----- i-k
@@ -102,7 +102,7 @@ var allAnswers = [
   { romaji: "ashi o kuzusu", jpg: "あしをくずす / 足をくずす", indo: "melangkahkan kaki" },
   { romaji: "azukaru", jpg: "あずかる / 預かる", indo: "mengasuh / menjaga" },
   { romaji: "azukeru", jpg: "あずける / 預ける", indo: "menitipkan / menyimpan" },
-  { romaji: "asoko", jpg: "あそこ", indo: "di sana" },
+  { romaji: "asoko", jpg: "あそこ", indo: "(di) sana" },
   { romaji: "soko / achira", jpg: "そこ / あちら", indo: "sana" },
   { romaji: "asobi / asobu", jpg: "あそび / あそぶ / 遊び / 遊ぶ", indo: "bermain" },
   { romaji: "asobi ni kuru", jpg: "あそびにくる / 遊びに来る", indo: "datang untuk bermain" },
@@ -131,4 +131,18 @@ var allAnswers = [
   { romaji: "doomo", jpg: "どうも", indo: "Makasih" },
   { romaji: "otoshimashita yo", jpg: "おとしましたよ / 落としましたよ", indo: "Saya menjatuhkannya" },
   { romaji: "doozo", jpg: "どうぞ", indo: "Silakan" },
+  { romaji: "iie", jpg: "いいえ", indo: "tidak / sama-sama" },
+  { romaji: "waa", jpg: "わあ", indo: "wah" },
+  { romaji: "ayamaru", jpg: "あやまる / 謝る", indo: "meminta maaf" },
+  { romaji: "omedetoo gozaimasu", jpg: "おめでとうございます", indo: "selamat!" },
+  { romaji: "itai", jpg: "いたい / 痛い", indo: "aduh~sakit" },
+  { romaji: "wakarimashita", jpg: "わかりました", indo: "Saya mengerti" },
+  { romaji: "yoku", jpg: "よく", indo: "dengan baik" },
+  { romaji: "moo ichido", jpg: "もういちど", indo: "sekali lagi" },
+  { romaji: "mou sukoshi", jpg: "もうすこし / もう少し", indo: "sedikit lagi" },
+  { romaji: "yukkuri", jpg: "ゆっくり", indo: "perlahan / pelan" },
+  { romaji: "zairyuu kaado", jpg: "ザイリュウカード / 在留カード", indo: "kartu izin tinggal" },
+  { romaji: "koko", jpg: "ここ", indo: "(di) sini" },
+  { romaji: "namae", jpg: "なまえ / 名前", indo: "nama" },
+  { romaji: "heya", jpg: "へや / 部屋", indo: "ruangan / kamar" },
 ];
