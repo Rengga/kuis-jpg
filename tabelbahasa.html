@@ -27,18 +27,21 @@
     th {
       background-color: #d1ccda;
     }
+    td {
+      background-color: aliceblue;
+    }
     #searchInput {
       border: 2px solid #776d8a;
     }
   </style>
-  <body class="i-j py-6 px-4">
+  <body class="i-j py-6 px-4 bg-texture">
     <div class="menu flex gap-4">
       <a href="index.html">Home</a>
       <a href="credit.html"> Credit</a>
     </div>
     <div class="flex flex-col w-full justify-center items-center gap-4 py-4">
       <input type="text" id="searchInput" class="py-2 px-6 rounded-full" placeholder="Cari..." />
-      <div class="">Total : <span class="total"></span>&nbsp;Kata</div>
+      <div class="font-bold">Total : <span class="total"></span>&nbsp;Kata</div>
 
       <table id="tabel-bahasa">
         <thead>
@@ -51,6 +54,9 @@
         </thead>
         <tbody></tbody>
       </table>
+      <div class="kosong text-center font-bold bg-white rounded-xl p-4" style="display: none">
+        Tidak ditemukan<br />mitsukarimasen deshita<br />見つかりませんでした<br />みつかりませんでした
+      </div>
     </div>
   </body>
 </html>
@@ -77,10 +83,14 @@
   populateTable(allAnswers);
 
   $("#searchInput").on("input", function () {
-    const input = $(this).val().toLowerCase();
-    const filteredData = allAnswers.filter((item) => {
+    let input = $(this).val().toLowerCase();
+    let filteredData = allAnswers.filter((item) => {
       return item.romaji.toLowerCase().includes(input) || item.jpg.toLowerCase().includes(input) || item.indo.toLowerCase().includes(input);
     });
     populateTable(filteredData);
+    $(".kosong").hide();
+    if (filteredData == "") {
+      $(".kosong").show();
+    }
   });
 </script>

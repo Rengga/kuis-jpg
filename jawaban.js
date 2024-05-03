@@ -1,5 +1,5 @@
 // tabel 88
-// hal 5 kosakatan tingkat pemula
+// hal 6 kosakatan tingkat pemula
 // i-j i-k r-k ----- j-i
 // j-i i-k r-k ----- i-j
 // j-i i-j r-k ----- i-k
@@ -145,4 +145,25 @@ var allAnswers = [
   { romaji: "koko", jpg: "ここ", indo: "(di) sini" },
   { romaji: "namae", jpg: "なまえ / 名前", indo: "nama" },
   { romaji: "heya", jpg: "へや / 部屋", indo: "ruangan / kamar" },
+  { romaji: "wakarimasen", jpg: "わかりません", indo: "saya tidak mengerti/paham" },
+  { romaji: "onegaishimasu", jpg: "おねがいします / お願いします", indo: "tolong" },
+  { romaji: "itte kudasai", jpg: "いってください / 言ってください", indo: "tolong katakan/ucapkan" },
+  { romaji: "misete kudasai", jpg: "みせてください / 見せてください", indo: "tolong tunjukkan" },
+  { romaji: "kaite kudasai", jpg: "かいてください / 書いてください", indo: "tolong tulis" },
+  { romaji: "wakarimashita", jpg: "わかりました", indo: "saya mengerti/paham" },
+  { romaji: "zero", jpg: "ゼロ", indo: "nol" },
+  { romaji: "ichi", jpg: "いち", indo: "satu" },
+  { romaji: "ni", jpg: "に", indo: "dua" },
+  { romaji: "san", jpg: "さん", indo: "tiga" },
+  { romaji: "yon", jpg: "よん", indo: "empat" },
+  { romaji: "go", jpg: "ご", indo: "lima" },
+  { romaji: "roku", jpg: "ろく", indo: "enam" },
+  { romaji: "nana", jpg: "なな", indo: "tujuh" },
+  { romaji: "hachi", jpg: "はち", indo: "delapan" },
+  { romaji: "kyuu", jpg: "きゅう", indo: "sembilan" },
+  { romaji: "juu", jpg: "じゅう", indo: "sepuluh" },
+  { romaji: "nihongo", jpg: "にほんご / 日本語", indo: "bahasa jepang" },
+  { romaji: "eego", jpg: "えいご / 英語", indo: "bahasa inggris" },
+  { romaji: "chuugokugo", jpg: "ちゅうごくご / 中国語", indo: "bahasa mandarin" },
+  { romaji: "indoneshia-go", jpg: "インドネシアゴ / インドネシア語", indo: "bahasa Indonesia" },
 ];
