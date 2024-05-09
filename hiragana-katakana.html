@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiragana - Katakana</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <style>
+    input {
+      border: 2px solid #776d8a;
+      outline: none;
+      text-align: center;
+    }
+    input:focus {
+      outline: 4px solid #776d8a;
+      border: 1px solid #776d8a;
+    }
+    .cek {
+      padding: 4px 6px;
+      background-color: #6e5773;
+      color: white;
+      border-radius: 8px;
+    }
+    .tombol button {
+      padding: 4px 12px 6px 12px;
+      background-color: #6e5773;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+    .tombol button.on {
+      background-color: #679b9b;
+      text-decoration: underline;
+    }
+    .soal,
+    .kunci-jawaban {
+      color: #6e5773;
+    }
+  </style>
+  <body class="bg-texture h-screen py-6 px-4 flex flex-col">
+    <div class="menu flex gap-4">
+      <a href="index.html"> Home</a>
+
+      <a href="tabelbahasa.html">Tabel Bahasa</a>
+      <a href="credit.html"> Credit</a>
+    </div>
+    <div class="kana-soal w-54 flex-col flex items-center my-24 gap-4">
+      <div class="soal text-8xl" data-romaji=""></div>
+      <input type="text" class="w-20 p-2 h-12 text-3xl font-bold rounded-xl" />
+      <button class="font-bold cek">Cek</button>
+      <div class="kunci-jawaban text-xl font-bold"></div>
+    </div>
+    <div class="tombol w-full flex justify-evenly">
+      <button class="t-hiragana on">Hiragana</button>
+      <button class="t-katakana">Katakana</button>
+    </div>
+  </body>
+</html>
+<script src="hiragana.js"></script>
+<script src="katakana.js"></script>
+
+<script>
+  var yangAktif = "hira";
+  $(document).ready(function () {
+    generateRandomHiragana();
+  });
+  $(document).on("click", ".t-hiragana", function () {
+    $(this).addClass("on");
+    $(".t-katakana").removeClass("on");
+    generateRandomHiragana();
+  });
+  $(document).on("click", ".t-katakana", function () {
+    $(this).addClass("on");
+    $(".t-hiragana").removeClass("on");
+    generateRandomKatakana();
+  });
+
+  function generateRandomHiragana() {
+    yangAktif = "hira";
+    // Mendapatkan indeks acak dari array
+    var randomIndex = Math.floor(Math.random() * hira.length);
+    // Mendapatkan objek kana dari array berdasarkan indeks acak
+    var randomKana = hira[randomIndex];
+
+    // Menampilkan hasil di dalam div dengan id "result"
+    $(".soal").text(`${randomKana.kana}`).data("romaji", `${randomKana.roumaji}`);
+    let romaji = randomKana.roumaji;
+    console.log(romaji);
+    if (romaji == "(pause / ukuran kecil)") {
+      $(".soal").data("romaji", "pause");
+    }
+    // <p>Kana: ${randomKana.kana}</p>
+    // <p>Roumaji: ${randomKana.roumaji}</p>
+    // <p>Type: ${randomKana.type}</p>
+  }
+
+  function generateRandomKatakana() {
+    yangAktif = "kana";
+    // Mendapatkan indeks acak dari array
+    var randomIndex = Math.floor(Math.random() * kata.length);
+    // Mendapatkan objek kana dari array berdasarkan indeks acak
+    var randomKana = kata[randomIndex];
+
+    // Menampilkan hasil di dalam div dengan id "result"
+    $(".soal").text(`${randomKana.kana}`).data("romaji", `${randomKana.roumaji}`);
+    let romaji = randomKana.roumaji;
+    console.log(romaji);
+    if (romaji == "(pause / ukuran kecil)") {
+      $(".soal").data("romaji", "pause");
+    }
+    // <p>Kana: ${randomKana.kana}</p>
+    // <p>Roumaji: ${randomKana.roumaji}</p>
+    // <p>Type: ${randomKana.type}</p>
+  }
+
+  $(document).on("click", ".cek", function () {
+    $(".kunci-jawaban").show("fast");
+    $(".kunci-jawaban").text($(".soal").data("romaji"));
+  });
+
+  $(document).on("keyup", "input", function () {
+    let jawaban = $(this).val();
+    if (jawaban == $(".soal").data("romaji")) {
+      if (yangAktif == "hira") {
+        generateRandomHiragana();
+      } else {
+        generateRandomKatakana();
+      }
+      $(".kunci-jawaban").hide("fast");
+      $("input").val("");
+    }
+  });
+</script>
