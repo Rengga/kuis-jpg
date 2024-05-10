@@ -128,7 +128,7 @@
   });
 
   $(document).on("keyup", "input", function () {
-    let jawaban = $(this).val();
+    let jawaban = $(this).val().toLowerCase();
     if (jawaban == $(".soal").data("romaji")) {
       if (yangAktif == "hira") {
         generateRandomHiragana();
