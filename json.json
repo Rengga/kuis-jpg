@@ -6,14 +6,26 @@
   { "romaji": "tana", "jpg": "たな / 種", "indo": "benih atau jenis" },
   { "romaji": "terebi", "jpg": "テレビ", "indo": "televisi" },
   { "romaji": "reizouko", "jpg": "れいぞうこ / 冷蔵庫", "indo": "kulkas" },
-  { "romaji": "sentakuki /sentakki", "jpg": "せんたくき / 洗濯機", "indo": "mesin cuci" },
+  {
+    "romaji": "sentakuki /sentakki",
+    "jpg": "せんたくき / 洗濯機",
+    "indo": "mesin cuci"
+  },
   { "romaji": "kagami", "jpg": "かがみ / 鏡", "indo": "cermin" },
-  { "romaji": "beddo / shindai", "jpg": "ベッド / 寝台", "indo": "tempat tidur" },
+  {
+    "romaji": "beddo / shindai",
+    "jpg": "ベッド / 寝台",
+    "indo": "tempat tidur"
+  },
   { "romaji": "nichi", "jpg": "にち / 日", "indo": "hari" },
   { "romaji": "ito", "jpg": "いと / 糸", "indo": "benang / serat" },
   { "romaji": "tsuki", "jpg": "つき / 月", "indo": "bulan" },
   { "romaji": "toshi", "jpg": "とし / 年", "indo": "tahun" },
-  { "romaji": "doa / dooru / tobira", "jpg": "どあ / ドア / (とびら / 扉)", "indo": "pintu" },
+  {
+    "romaji": "doa / dooru / tobira",
+    "jpg": "どあ / ドア / (とびら / 扉)",
+    "indo": "pintu"
+  },
   { "romaji": "mado", "jpg": "まど / 窓", "indo": "jendela" },
   { "romaji": "curtain / katen", "jpg": "カーテン / かてん ", "indo": "tirai" },
   { "romaji": "garasu", "jpg": "ガラス / がらす", "indo": "kaca" },
@@ -38,49 +50,145 @@
   { "romaji": "kaze", "jpg": "かぜ / 風", "indo": "angin" },
   { "romaji": "Bitto", "jpg": "ビット", "indo": "bit (dalam teknis komputer)" },
   { "romaji": "shiawase na", "jpg": "しあわせな / 幸せな", "indo": "bahagia" },
-  { "romaji": "hi jou ni", "jpg": "ひじょうに / 非常に", "indo": "sangat / teramat" },
-  { "romaji": "sonota", "jpg": "そのた / その他", "indo": "lainnya / yang lain" },
+  {
+    "romaji": "hi jou ni",
+    "jpg": "ひじょうに / 非常に",
+    "indo": "sangat / teramat"
+  },
+  {
+    "romaji": "sonota",
+    "jpg": "そのた / その他",
+    "indo": "lainnya / yang lain"
+  },
   { "romaji": "miru", "jpg": "みる / 見る", "indo": "melihat" },
-  { "romaji": "mieru", "jpg": "みえる / 見える", "indo": "terlihat / dapat dilihat" },
+  {
+    "romaji": "mieru",
+    "jpg": "みえる / 見える",
+    "indo": "terlihat / dapat dilihat"
+  },
   { "romaji": "sensei", "jpg": "せんせい / 先生", "indo": "guru / pengajar" },
-  { "romaji": "kaeru", "jpg": "かえる / 変える", "indo": "mengubah / mengganti" },
+  {
+    "romaji": "kaeru",
+    "jpg": "かえる / 変える",
+    "indo": "mengubah / mengganti"
+  },
   { "romaji": "hayai", "jpg": "はやい / 早い", "indo": "cepat" },
-  { "romaji": "tatakai", "jpg": "たたかい / 戦い", "indo": "pertempuran / perjuangan" },
-  { "romaji": "yawarageru", "jpg": "やわらげる / 和らげる", "indo": "meringankan / mengurangi" },
-  { "romaji": "hiku", "jpg": "ひく / 引く (konteks umum)", "indo": "menarik / mengeluarkan (konteks umum)" },
-  { "romaji": "hiku", "jpg": "ひく / 引く (konteks musik)", "indo": "memainkan / memetik (konteks musik)" },
+  {
+    "romaji": "tatakai",
+    "jpg": "たたかい / 戦い",
+    "indo": "pertempuran / perjuangan"
+  },
+  {
+    "romaji": "yawarageru",
+    "jpg": "やわらげる / 和らげる",
+    "indo": "meringankan / mengurangi"
+  },
+  {
+    "romaji": "hiku",
+    "jpg": "ひく / 引く (konteks umum)",
+    "indo": "menarik / mengeluarkan (konteks umum)"
+  },
+  {
+    "romaji": "hiku",
+    "jpg": "ひく / 引く (konteks musik)",
+    "indo": "memainkan / memetik (konteks musik)"
+  },
   { "romaji": "kau", "jpg": "かう / 買う", "indo": "membeli" },
-  { "romaji": "aikido", "jpg": "あいきどう / 合気道", "indo": "seni bela diri jepang" },
+  {
+    "romaji": "aikido",
+    "jpg": "あいきどう / 合気道",
+    "indo": "seni bela diri jepang"
+  },
   { "romaji": "aisatsu", "jpg": "あいさつ / 挨拶", "indo": "salam / ucapan" },
   { "romaji": "aisu", "jpg": "アイス / あいす", "indo": "es" },
-  { "romaji": "aisukurīmu", "jpg": "アイスクリーム / あいすくりーむ", "indo": "es krim" },
-  { "romaji": "aisukōhī", "jpg": "アイスコーヒー / あいすこーひー", "indo": "es kopi" },
+  {
+    "romaji": "aisukurīmu",
+    "jpg": "アイスクリーム / あいすくりーむ",
+    "indo": "es krim"
+  },
+  {
+    "romaji": "aisukōhī",
+    "jpg": "アイスコーヒー / あいすこーひー",
+    "indo": "es kopi"
+  },
   { "romaji": "ma / aida", "jpg": "あいだ / 間", "indo": "antara ~ dan ~" },
-  { "romaji": "ma o akeru", "jpg": "まをあける / 間を開ける", "indo": "memberi jarak atau jeda / memberi istirahat " },
-  { "romaji": "sōte", "jpg": "あいて / 相手", "indo": "lawan / pasangan / orang lain / mitra" },
+  {
+    "romaji": "ma o akeru",
+    "jpg": "まをあける / 間を開ける",
+    "indo": "memberi jarak atau jeda / memberi istirahat "
+  },
+  {
+    "romaji": "sōte",
+    "jpg": "あいて / 相手",
+    "indo": "lawan / pasangan / orang lain / mitra"
+  },
   { "romaji": "aidea", "jpg": "アイディア / あいでぃあ", "indo": "ide" },
   { "romaji": "aiti", "jpg": "アイティー / あいてぃー", "indo": "IT" },
-  { "romaji": "suteiru", "jpg": "スティール / すている", "indo": "steel (baja)" },
+  {
+    "romaji": "suteiru",
+    "jpg": "スティール / すている",
+    "indo": "steel (baja)"
+  },
   { "romaji": "airon", "jpg": "アイロン / あいろん", "indo": "besi" },
-  { "romaji": "aimasu (formal) / au", "jpg": " あいます / 会います / あう / 会う", "indo": "bertemu" },
-  { "romaji": "autodōa", "jpg": "アウトドア / あうとどあ", "indo": "outdoor (luar ruangan)" },
-  { "romaji": "yōhin", "jpg": "ようひん / 用品", "indo": "barang / perlengkapan" },
-  { "romaji": "autoretto mōru", "jpg": "アウトレットモール / あうとれっと もーる", "indo": "outlet mall" },
+  {
+    "romaji": "aimasu (formal) / au",
+    "jpg": " あいます / 会います / あう / 会う",
+    "indo": "bertemu"
+  },
+  {
+    "romaji": "autodōa",
+    "jpg": "アウトドア / あうとどあ",
+    "indo": "outdoor (luar ruangan)"
+  },
+  {
+    "romaji": "yōhin",
+    "jpg": "ようひん / 用品",
+    "indo": "barang / perlengkapan"
+  },
+  {
+    "romaji": "autoretto mōru",
+    "jpg": "アウトレットモール / あうとれっと もーる",
+    "indo": "outlet mall"
+  },
   { "romaji": "ao / aoi", "jpg": "あお / あおい / 青 / 青い", "indo": "biru" },
-  { "romaji": "aozora", "jpg": "あおぞら / 青空", "indo": "langit biru / langit cerah /cuaca bagus" },
+  {
+    "romaji": "aozora",
+    "jpg": "あおぞら / 青空",
+    "indo": "langit biru / langit cerah /cuaca bagus"
+  },
   { "romaji": "aka", "jpg": "あか / 赤", "indo": "merah" },
   { "romaji": "akachan", "jpg": "あかちゃん / 赤ちゃん", "indo": "bayi" },
   { "romaji": "agaru", "jpg": "あがる / 上がる", "indo": "naik" },
   { "romaji": "akarui", "jpg": "あかるい / 明るい", "indo": "terang / cerah" },
   { "romaji": "aki", "jpg": "あき / 秋", "indo": "musim gugur" },
-  { "romaji": "Aki no mikaku", "jpg": "あきのみかく / 秋の味覚", "indo": "rasa musim gugur / makanan musim gugur" },
+  {
+    "romaji": "Aki no mikaku",
+    "jpg": "あきのみかく / 秋の味覚",
+    "indo": "rasa musim gugur / makanan musim gugur"
+  },
   { "romaji": "akirameru", "jpg": "あきらめる / 赤", "indo": "menyerah" },
-  { "romaji": "hiraku", "jpg": "ひらく / 開く", "indo": "membuka (konteks fisik : membuka buku/kemasan)" },
-  { "romaji": "akushon eiga", "jpg": "アクションえいが / アクション映画", "indo": "film aksi" },
+  {
+    "romaji": "hiraku",
+    "jpg": "ひらく / 開く",
+    "indo": "membuka (konteks fisik : membuka buku/kemasan)"
+  },
+  {
+    "romaji": "akushon eiga",
+    "jpg": "アクションえいが / アクション映画",
+    "indo": "film aksi"
+  },
   { "romaji": "akusesarī", "jpg": "アクセサリー", "indo": "aksesoris" },
   { "romaji": "akutibiti", "jpg": "アクティビティ", "indo": "aktivitas" },
-  { "romaji": "akemashite omedetou gozaimasu", "jpg": "あけましておめでとうございます", "indo": "selamat tahun baru" },
-  { "romaji": "akeru", "jpg": "あける", "indo": "membuka (konteks fisik dan non-fisik : membuka jendela)" },
+  {
+    "romaji": "akemashite omedetou gozaimasu",
+    "jpg": "あけましておめでとうございます",
+    "indo": "selamat tahun baru"
+  },
+  {
+    "romaji": "akeru",
+    "jpg": "あける",
+    "indo": "membuka (konteks fisik dan non-fisik : membuka jendela)"
+  },
   { "romaji": "ageru", "jpg": "あげる / 揚げる", "indo": "menggoreng" },
   { "romaji": "asa", "jpg": "あさ / 朝", "indo": "pagi" },
   { "romaji": "asagohan", "jpg": "あさごはん / 朝ご飯", "indo": "sarapan" },
@@ -88,25 +196,197 @@
   { "romaji": "ashi", "jpg": "あし / 足", "indo": "kaki" },
   { "romaji": "aji", "jpg": "あじ / 味", "indo": "rasa" },
   { "romaji": "ajia", "jpg": "アジア", "indo": "asia" },
-  { "romaji": " ajia shokuzai", "jpg": "アジア食材", "indo": "bahan makanan asia" },
-  { "romaji": "aji ga tsuiteiru", "jpg": "あじがついている / 味がついている", "indo": "memiliki rasa" },
-  { "romaji": "aji ga nai", "jpg": "あじがない / 味がない", "indo": "tidak memiliki rasa" },
+  {
+    "romaji": " ajia shokuzai",
+    "jpg": "アジア食材",
+    "indo": "bahan makanan asia"
+  },
+  {
+    "romaji": "aji ga tsuiteiru",
+    "jpg": "あじがついている / 味がついている",
+    "indo": "memiliki rasa"
+  },
+  {
+    "romaji": "aji ga nai",
+    "jpg": "あじがない / 味がない",
+    "indo": "tidak memiliki rasa"
+  },
   { "romaji": "ashita", "jpg": "あした / 明日", "indo": "besok" },
   { "romaji": "ajiwau", "jpg": "あじわう / 味わう", "indo": "merasakan" },
-  { "romaji": "ashi o kuzusu", "jpg": "あしをくずす / 足をくずす", "indo": "melangkahkan kaki" },
-  { "romaji": "azukaru", "jpg": "あずかる / 預かる", "indo": "mengasuh / menjaga" },
-  { "romaji": "azukeru", "jpg": "あずける / 預ける", "indo": "menitipkan / menyimpan" },
+  {
+    "romaji": "ashi o kuzusu",
+    "jpg": "あしをくずす / 足をくずす",
+    "indo": "melangkahkan kaki"
+  },
+  {
+    "romaji": "azukaru",
+    "jpg": "あずかる / 預かる",
+    "indo": "mengasuh / menjaga"
+  },
+  {
+    "romaji": "azukeru",
+    "jpg": "あずける / 預ける",
+    "indo": "menitipkan / menyimpan"
+  },
   { "romaji": "asoko", "jpg": "あそこ", "indo": "di sana" },
   { "romaji": "soko / achira", "jpg": "そこ / あちら", "indo": "sana" },
-  { "romaji": "asobi / asobu", "jpg": "あそび / あそぶ / 遊び / 遊ぶ", "indo": "bermain" },
-  { "romaji": "asobi ni kuru", "jpg": "あそびにくる / 遊びに来る", "indo": "datang untuk bermain" },
+  {
+    "romaji": "asobi / asobu",
+    "jpg": "あそび / あそぶ / 遊び / 遊ぶ",
+    "indo": "bermain"
+  },
+  {
+    "romaji": "asobi ni kuru",
+    "jpg": "あそびにくる / 遊びに来る",
+    "indo": "datang untuk bermain"
+  },
   { "romaji": "asobou", "jpg": "あそぼう / 遊ぼう", "indo": "mari bermain" },
   { "romaji": "atatakai", "jpg": "あたたかい / 暖かい", "indo": "hangat" },
-  { "romaji": "atatameru / atatamemasu", "jpg": "あたためる / あたためます / 温める / 温めます", "indo": "memanaskan" },
+  {
+    "romaji": "atatameru / atatamemasu",
+    "jpg": "あたためる / あたためます / 温める / 温めます",
+    "indo": "memanaskan"
+  },
   { "romaji": "atama", "jpg": "あたま / 頭", "indo": "kepala" },
   { "romaji": "atarashii", "jpg": "あたらしい / 新しい", "indo": "baru" },
-  { "romaji": "atarashiku", "jpg": "あたらしく / 新しく", "indo": "secara baru(segar/baru dibeli)" },
+  {
+    "romaji": "atarashiku",
+    "jpg": "あたらしく / 新しく",
+    "indo": "secara baru(segar/baru dibeli)"
+  },
   { "romaji": "atsui", "jpg": "あつい / 暑い", "indo": "panas" },
   { "romaji": "atsui", "jpg": "あつい / 厚い", "indo": "tebal" },
-  { "romaji": "futoi", "jpg": "ふとい / 太い", "indo": "ketebalan" }
+  { "romaji": "futoi", "jpg": "ふとい / 太い", "indo": "ketebalan" },
+  { "romaji": "denwa", "jpg": "でんわ / 電話", "indo": "telepon" },
+  { "romaji": "pasokon", "jpg": "パソコン", "indo": "komputer" },
+  { "romaji": "kaban", "jpg": "かばん / 鞄", "indo": "tas" },
+  { "romaji": "mizu", "jpg": "みず / 水", "indo": "air" },
+  { "romaji": "tabemono", "jpg": "たべもの / 食べ物", "indo": "makanan" },
+  { "romaji": "nomimono", "jpg": "のみもの / 飲み物", "indo": "minuman" },
+  { "romaji": "hashi", "jpg": "はし / 箸", "indo": "sumpit" },
+  { "romaji": "fooku", "jpg": "フォーク", "indo": "garpu" },
+  { "romaji": "naifu", "jpg": "ナイフ", "indo": "pisau" },
+  { "romaji": "osara", "jpg": "おさら / お皿", "indo": "piring" },
+  { "romaji": "taberu", "jpg": "たべる / 食べる", "indo": "makan" },
+  { "romaji": "nomu", "jpg": "のむ / 飲む", "indo": "minum" },
+  { "romaji": "miru", "jpg": "みる / 見る", "indo": "melihat" },
+  { "romaji": "kiku", "jpg": "きく / 聞く", "indo": "mendengar / bertanya" },
+  { "romaji": "yomu", "jpg": "よむ / 読む", "indo": "membaca" },
+  { "romaji": "kaku", "jpg": "かく / 書く", "indo": "menulis" },
+  { "romaji": "hashiru", "jpg": "はしる / 走る", "indo": "lari" },
+  { "romaji": "oyogu", "jpg": "およぐ / 泳ぐ", "indo": "berenang" },
+  { "romaji": "arau", "jpg": "あらう / 洗う", "indo": "mencuci" },
+  {
+    "romaji": "okiru",
+    "jpg": "おきる / 起きる",
+    "indo": "bangun (dari tidur)"
+  },
+  { "romaji": "neko", "jpg": "ねこ / 猫", "indo": "kucing" },
+  { "romaji": "inu", "jpg": "いぬ / 犬", "indo": "anjing" },
+  { "romaji": "sakana", "jpg": "さかな / 魚", "indo": "ikan" },
+  { "romaji": "tori", "jpg": "とり / 鳥", "indo": "burung" },
+  { "romaji": "uma", "jpg": "うま / 馬", "indo": "kuda" },
+  { "romaji": "usagi", "jpg": "うさぎ / 兎", "indo": "kelinci" },
+  { "romaji": "kuma", "jpg": "くま / 熊", "indo": "beruang" },
+  { "romaji": "zou", "jpg": "ぞう / 象", "indo": "gajah" },
+  { "romaji": "kirin", "jpg": "きりん / 麒麟", "indo": "jerapah" },
+  { "romaji": "raion", "jpg": "らいおん / ライオン", "indo": "singa" },
+  { "romaji": "banana", "jpg": "バナナ", "indo": "pisang" },
+  { "romaji": "ringo", "jpg": "りんご / 林檎", "indo": "apel" },
+  { "romaji": "mikan", "jpg": "みかん / 蜜柑", "indo": "jeruk" },
+  { "romaji": "ichigo", "jpg": "いちご / 苺", "indo": "stroberi" },
+  { "romaji": "budou", "jpg": "ぶどう / 葡萄", "indo": "anggur" },
+  { "romaji": "niku", "jpg": "にく / 肉", "indo": "daging" },
+  { "romaji": "sakana", "jpg": "さかな / 魚", "indo": "ikan" },
+  { "romaji": "tamago", "jpg": "たまご / 卵", "indo": "telur" },
+  { "romaji": "pan", "jpg": "ぱん / パン", "indo": "roti" },
+  { "romaji": "go", "jpg": "ご / 五", "indo": "lima" },
+  { "romaji": "roku", "jpg": "ろく / 六", "indo": "enam" },
+  { "romaji": "shichi / nana", "jpg": "しち / なな / 七", "indo": "tujuh" },
+  { "romaji": "hachi", "jpg": "はち / 八", "indo": "delapan" },
+  { "romaji": "kyuu", "jpg": "きゅう / 九", "indo": "sembilan" },
+  { "romaji": "juu", "jpg": "じゅう / 十", "indo": "sepuluh" },
+  { "romaji": "aka", "jpg": "あか / 赤", "indo": "merah" },
+  { "romaji": "ao", "jpg": "あお / 青", "indo": "biru" },
+  { "romaji": "midori", "jpg": "みどり / 緑", "indo": "hijau" },
+  { "romaji": "kiiro", "jpg": "きいろ / 黄色", "indo": "kuning" },
+  { "romaji": "shiro", "jpg": "しろ / 白", "indo": "putih" },
+  { "romaji": "kuro", "jpg": "くろ / 黒", "indo": "hitam" },
+  { "romaji": "nagai", "jpg": "ながい / 長い", "indo": "panjang" },
+  { "romaji": "mijikai", "jpg": "みじかい / 短い", "indo": "pendek" },
+  { "romaji": "hayai", "jpg": "はやい / 早い", "indo": "cepat" },
+  { "romaji": "osoi", "jpg": "おそい / 遅い", "indo": "lambat" },
+  { "romaji": "atarashii", "jpg": "あたらしい / 新しい", "indo": "baru" },
+  { "romaji": "furui", "jpg": "ふるい / 古い", "indo": "lama" },
+  { "romaji": "takai", "jpg": "たかい / 高い", "indo": "tinggi / mahal" },
+  { "romaji": "hikui", "jpg": "ひくい / 低い", "indo": "rendah" },
+  { "romaji": "yasui", "jpg": "やすい / 安い", "indo": "murah" },
+  { "romaji": "ookii", "jpg": "おおきい / 大きい", "indo": "besar" },
+  { "romaji": "chiisai", "jpg": "ちいさい / 小さい", "indo": "kecil" },
+  {
+    "romaji": "omoshiroi",
+    "jpg": "おもしろい / 面白い",
+    "indo": "menarik / lucu"
+  },
+  { "romaji": "mazui", "jpg": "まずい / 不味い", "indo": "tidak enak" },
+  { "romaji": "oishii", "jpg": "おいしい / 美味しい", "indo": "enak" },
+  { "romaji": "kirei", "jpg": "きれい / 綺麗", "indo": "cantik / bersih" },
+  { "romaji": "kitanai", "jpg": "きたない / 汚い", "indo": "kotor" },
+  { "romaji": "akarui", "jpg": "あかるい / 明るい", "indo": "terang" },
+  { "romaji": "kurai", "jpg": "くらい / 暗い", "indo": "gelap" },
+  {
+    "romaji": "tanaka",
+    "jpg": "たなか / 田中",
+    "indo": "Tanaka (nama keluarga)"
+  },
+  { "romaji": "yuki", "jpg": "ゆき / 雪", "indo": "salju" },
+  { "romaji": "ame", "jpg": "あめ / 雨", "indo": "hujan" },
+  { "romaji": "hare", "jpg": "はれ / 晴れ", "indo": "cerah" },
+  { "romaji": "kumo", "jpg": "くも / 雲", "indo": "awan" },
+  { "romaji": "taiyou", "jpg": "たいよう / 太陽", "indo": "matahari" },
+  { "romaji": "hoshi", "jpg": "ほし / 星", "indo": "bintang" },
+  { "romaji": "sora", "jpg": "そら / 空", "indo": "langit" },
+  { "romaji": "umi", "jpg": "うみ / 海", "indo": "laut" },
+  { "romaji": "kawa", "jpg": "かわ / 川", "indo": "sungai" },
+  { "romaji": "mizu", "jpg": "みず / 水", "indo": "air" },
+  { "romaji": "yama", "jpg": "やま / 山", "indo": "gunung" },
+  { "romaji": "hashiru", "jpg": "はしる / 走る", "indo": "berlari" },
+  { "romaji": "aruku", "jpg": "あるく / 歩く", "indo": "berjalan" },
+  { "romaji": "taberu", "jpg": "たべる / 食べる", "indo": "makan" },
+  { "romaji": "nomu", "jpg": "のむ / 飲む", "indo": "minum" },
+  { "romaji": "miru", "jpg": "みる / 見る", "indo": "melihat" },
+  { "romaji": "kiku", "jpg": "きく / 聞く", "indo": "mendengar" },
+  { "romaji": "iu", "jpg": "いう / 言う", "indo": "mengatakan" },
+  { "romaji": "hanasu", "jpg": "はなす / 話す", "indo": "berbicara" },
+  { "romaji": "kaku", "jpg": "かく / 書く", "indo": "menulis" },
+  { "romaji": "yomu", "jpg": "よむ / 読む", "indo": "membaca" },
+  { "romaji": "kau", "jpg": "かう / 買う", "indo": "membeli" },
+  { "romaji": "uru", "jpg": "うる / 売る", "indo": "menjual" },
+  { "romaji": "au", "jpg": "あう / 会う", "indo": "bertemu" },
+  { "romaji": "nemuru", "jpg": "ねむる / 眠る", "indo": "tidur" },
+  { "romaji": "okiru", "jpg": "おきる / 起きる", "indo": "bangun" },
+  {
+    "romaji": "benkyou suru",
+    "jpg": "べんきょうする / 勉強する",
+    "indo": "belajar"
+  },
+  {
+    "romaji": "shigoto suru",
+    "jpg": "しごとする / 仕事する",
+    "indo": "bekerja"
+  },
+  { "romaji": "yasumu", "jpg": "やすむ / 休む", "indo": "istirahat" },
+  { "romaji": "kuru", "jpg": "くる / 来る", "indo": "datang" },
+  { "romaji": "iku", "jpg": "いく / 行く", "indo": "pergi" },
+  { "romaji": "suru", "jpg": "する / する", "indo": "melakukan" },
+  { "romaji": "kangaeru", "jpg": "かんがえる / 考える", "indo": "berpikir" },
+  { "romaji": "shiru", "jpg": "しる / 知る", "indo": "mengetahui" },
+  { "romaji": "wakaru", "jpg": "わかる / 分かる", "indo": "mengerti" },
+  { "romaji": "tsukuru", "jpg": "つくる / 作る", "indo": "membuat" },
+  { "romaji": "kiku", "jpg": "きく / 聞く", "indo": "mendengar" },
+  { "romaji": "kakaru", "jpg": "かかる / 掛かる", "indo": "menggantung" },
+  { "romaji": "kakeru", "jpg": "かける / 掛ける", "indo": "menaruh" },
+  { "romaji": "tsukeru", "jpg": "つける / 付ける", "indo": "menempelkan" },
+  { "romaji": "sagasu", "jpg": "さがす / 探す", "indo": "mencari" },
+  { "romaji": "suru", "jpg": "する / 為る", "indo": "melakukan" }
 ]

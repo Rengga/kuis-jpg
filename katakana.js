@@ -356,7 +356,7 @@ var kata = [
   },
   {
     kana: "ッ",
-    roumaji: "(pause / ukuran kecil)",
+    roumaji: "tsu",
     type: "sokuon",
   },
   {

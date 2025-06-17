@@ -356,7 +356,7 @@ var hira = [
   },
   {
     kana: "っ",
-    roumaji: "(pause / ukuran kecil)",
+    roumaji: "tsu",
     type: "sokuon",
   },
   {
